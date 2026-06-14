@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Our Services - IT Training, Work Support & Digital Solutions | CodingCreators</title>
+
+  <meta name="description"
+    content="CodingCreators – Best IT training institute in Hyderabad offering online & offline IT courses, real-time project training, work support, and corporate IT training with placement assistance.">
+
+  <meta name="keywords"
+    content="IT training institute in Hyderabad, Best IT courses online and offline, Software training with real-time projects, Online IT classes with job support, Best training institute for freshers, Work support for IT professionals, Live online training for Java, Python, Selenium, Classroom IT training near me, Real-time project training in Hyderabad, Corporate IT training institute">
+
+  <meta name="author" content="CodingCreators">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <meta property="og:title" content="CodingCreators - IT Training & Digital Solutions">
+  <meta property="og:description"
+    content="Learn IT and non-IT courses with CodingCreators. Get expert-led training, industry-based projects, and work support to excel in technology.">
+  <meta property="og:url" content="https://www.codingcreators.in/service/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.codingcreators.in/assets/img/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CodingCreators - IT Training & Work Support">
+  <meta name="twitter:description"
+    content="Upgrade your skills with CodingCreators. We provide IT courses, job-ready training, and work support for professionals and beginners.">
+  <meta name="twitter:image" content="https://www.codingcreators.in/assets/img/logo.png">
+
+  <link rel="canonical" href="https://www.codingcreators.in/service/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "CodingCreators",
+    "serviceType": "Web Development",
+    "url": "https://www.codingcreators.in/",
+    "logo": "https://www.codingcreators.in/assets/img/logo.png",
+    "founder": "Pavan Kalyan Kopparapu",
+    "foundingDate": "2025",
+    "foundingLocation": "India",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Miyapur",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana ",
+      "postalCode": "500049",
+      "addressCountry": "India"
+    },
+    "provider": {
+    "@type": "Organization",
+    "name": "CodingCreators"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+918897814073",
+      "contactType": "customer service",
+      "email": "contact@codingcreators.in"
+    },
+    "areaServed": "India",
+    "description": "Professional web development services including HTML, CSS, React, Next.js, and PHP development.",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61573908004577",
+      "https://x.com/Coding_creators",
+      "https://www.linkedin.com/in/codingcreators",
+      "https://www.instagram.com/codingcreators.js/"
+    ]
+  }
+  </script>
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.ico" rel="icon">
+  <link href="/assets/img/apple-touch`-icon.png" rel="apple-touch-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+</head>
+<style>
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .card {
+    width: 270px;
+    height: 350px;
+    perspective: 1000px;
+    position: relative;
+  }
+
+  .card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+
+  .card-front,
+  .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-front {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .card-front p {
+    padding: 0 30px;
+  }
+
+  .card-front h1 {
+    padding: 0 30px;
+    font-size: 1.5rem;
+  }
+
+  .card-front img {
+    width: 100%;
+    object-fit: cover;
+  }
+</style>
+
+<body class="starter-page-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="/" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="/assets/img/logo.png" alt="codingCreators_Logo">
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li class="dropdown"><a href="/service/"><span>Services</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a class="dropdown-item" href="javascript:void(0);"
+                  onclick="showImage('classtraining')"><span>Classroom Training</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a class="dropdown-item" href="javascript:void(0);" onclick="showImage('classtraining')">Weekday
+                      Classes</a></li>
+                  <li><a class="dropdown-item" href="javascript:void(0);" onclick="showImage('classtraining')">Weekend
+                      Classes</a></li>
+                </ul>
+              </li>
+              <li><a class="dropdown-item" href="javascript:void(0);" onclick="showImage('onlinetraining')">Online
+                  Training</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);" onclick="showImage('itcorporatetraining')">IT
+                  Corporate Training</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);" onclick="showImage('realtimeproject')">IT and
+                  Non-IT Real-time Projects</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0);" onclick="showImage('itsupport')">IT and
+                  NON-IT Work support</a></li>
+
+            </ul>
+          </li>
+          <li class="dropdown"><a href="/courses/"><span>Courses Offered</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <!-- <li><a href="#">Dropdown 1</a></li> -->
+              <li class="dropdown"><a href="/courses/#programmingdevelopment"><span>Programming & Development
+                  </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#programmingdevelopment">Web Development</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Mobile App Development</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Game Development</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Angular JS</a></li>
+                  <li><a href="/courses/#programmingdevelopment">JAVA Realtime</a></li>
+                  <li><a href="/courses/#programmingdevelopment">React JS</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Spring Boot</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Python Full Stack</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Java Full Stack</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Core Java</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Advance Java</a></li>
+                  <li><a href="/courses/#programmingdevelopment">MERN Full Stack</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Data Structures & Algorithms</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/courses/#testing"><span>Software Testing & Quality Assurance</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#testing">Manual Testing</a></li>
+                  <li><a href="/courses/#testing">Automation Testing</a></li>
+                  <li><a href="/courses/#testing">Performance Testing</a></li>
+                  <li><a href="/courses/#testing">API Testing</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/courses/#datascience"><span>Data Science & Analytics</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#datascience">Data Science with Python or R
+                    </a></li>
+                  <li><a href="/courses/#datascience">Core Python</a></li>
+                  <li><a href="/courses/#datascience">Advance Python</a></li>
+                  <li><a href="/courses/#datascience">Machine Learning & AI
+                    </a></li>
+                  <li><a href="/courses/#datascience">Data Analytics</a></li>
+                  <li><a href="/courses/#datascience">Generative AI
+                    </a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/courses/#cloudcomputing"><span>Cloud Computing</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#cloudcomputing">Amazon Web Services</a></li>
+                  <li><a href="/courses/#cloudcomputing">Microsoft Azure
+                    </a></li>
+                  <li><a href="/courses/#cloudcomputing">DevOps</a></li>
+                  <li><a href="/courses/#cloudcomputing">Docker Kubernetes
+                    </a></li>
+
+                </ul>
+              </li>
+
+
+
+              <li class="dropdown"><a href="/courses/#dbms"><span>Database Management</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#dbms">SQL</a></li>
+                  <li><a href="/courses/#dbms">NoSQL</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/courses/#agileproject"><span>Project Management & Agile</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#agileproject">Agile & Scrum Framework
+                    </a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/careers/">Careers</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+
+    </div>
+  </header>
+
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="/">Home</a></li>
+            <li class="current">Starter Page</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+
+    <!-- Service Details Section -->
+    <section id="service-details" class="service-details section hero section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <h4>Service List</h4>
+            <div class="services-list">
+              <button data-target="classtraining" class="active" onclick="showImage('classtraining')"><i
+                  class="bi bi-arrow-right-circle"></i><span>
+                  Classroom Training</span></button>
+              <button data-target="onlinetraining" onclick="showImage('onlinetraining')"><i
+                  class="bi bi-arrow-right-circle"></i><span>
+                  Online Training</span></button>
+              <button data-target="itcorporatetraining" onclick="showImage('itcorporatetraining')"><i
+                  class="bi bi-arrow-right-circle"></i><span> IT
+                  Corporate Training
+                </span></button>
+              <button data-target="realtimeproject" onclick="showImage('realtimeproject')"><i
+                  class="bi bi-arrow-right-circle"></i><span> IT and
+                  Non-IT Real-time Projects</span></button>
+              <button data-target="itsupport" onclick="showImage('itsupport')"><i
+                  class="bi bi-arrow-right-circle"></i><span> IT and
+                  NON-IT Work support</span></button>
+            </div>
+          </div>
+
+          <div class="image-display col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <div id="classtraining" style="display: block;">
+              <section id="features-cards" class="features-cards section">
+
+                <div class="card-container">
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="/assets/img/weekend.jpg" alt="Weekday IT classroom training in Hyderabad">
+                        <p>Comprehensive classroom training to enhance skills, foster learning, and drive professional
+                          growth.</p>
+                        <h4>Weekday Classes</h4>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="/assets/img/weekend2.jpg" alt="Weekday IT classroom training in Hyderabad">
+                        <p>Interactive classroom training to build skills, boost knowledge, and support career
+                          development.</p>
+                        <h4>Weekend Classes</h4>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="onlinetraining" style="display: none;">
+              <section id="features-cards" class="features-cards section">
+                <div class="card-container">
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="/assets/img/online clasess.jpg" alt="online_classes">
+                        <p>Flexible and accessible online training to enhance skills and advance professional growth at
+                          your own pace.</p>
+                        <h4>Online Training</h4>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="/assets/img/online clasess2.jpg" alt="online_classes">
+                        <p>Comprehensive online training to boost skills, knowledge, and career development at your
+                          convenience.</p>
+                        <h4>Online Training</h4>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+            <div id="itcorporatetraining" style="display: none;">
+              <section id="features-cards" class="features-cards section">
+
+                <div class="card-container">
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="/assets/img/it corparate traing.jpg" alt="it_corparate_training">
+                        <p>Expert IT corporate training to improve skills, increase efficiency, and support business
+                          success.</p>
+                        <h4>IT Corporate Training</h4>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="/assets/img/it corparate traing2.jpg" alt="it_corparate_training">
+                        <p>Offering IT corporate training to enhance skills, boost productivity, and drive business
+                          growth.</p>
+                        <h4>IT Corporate Training</h4>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="realtimeproject" style="display: none;">
+              <section id="features-cards" class="features-cards section">
+
+                <div class="card-container">
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="/assets/img/services.jpg" alt="service">
+                        <p> Delivering IT and Non-IT real-time project support with efficient solutions for your
+                          business needs.
+
+
+                        </p>
+                        <h4>Final Year Projects</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <h4>Final Year Projects</h4>
+                        <ul>
+                          <li>IoT Projects</li>
+                          <li>Software Projects</li>
+                          <li>Embedded Projects</li>
+                          <li>Android Projects</li>
+                          <li>Python Projects</li>
+                          <li>Matlab Projects</li>
+                          <li>Mini Projects</li>
+                        </ul>
+                        <a href="/contact/" class="btn btn-primary">Reach Out</a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+            </div>
+            <div id="itsupport" style="display: none;">
+              <section id="features-cards" class="features-cards section">
+
+                <div class="card-container">
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="/assets/img/it work support.jpg" alt="it_work_support">
+                        <p> Offering professional IT support to ensure seamless technology management and optimization
+                          for your business. </p>
+                        <h4> Work support</h4>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-inner">
+                      <div class="card-front">
+                        <img src="/assets/img/it work support2.jpg" alt="it_work_support">
+                        <p>Providing reliable Non-IT work support to streamline your business operations, enhance
+                          productivity, and ensure efficiency. </p>
+                        <h4> Work support</h4>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+      </div>
+
+    </section><!-- /Service Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="/" class="d-flex align-items-center">
+            <span class="sitename">CodingCreators</span>
+          </a>
+          <div class="footer-contact pt-3">
+
+            <p>Plot No: 154&155, HNo. 1-72NE,</p>
+            <p> Lane Number N-4, Nagarjuna Enclave,</p>
+            <p> Miyapur, Hyderabad, Telangana 500049, India</p>
+            <p class="mt-3"><strong>Phone:</strong> <a style="font-size: 0.9rem;" href="tel:+918897814073">+91
+                8897814073</a></p>
+            <p><strong>Whatsapp:</strong> <a style="font-size: 0.9rem;" href="https://wa.me/918919210748"
+                target="_blank">+91
+                8919210748</a></p>
+            <p><strong>Mobile:</strong> <a style="font-size: 0.9rem;" href="tel:+917842510602">+91
+                7842510602</a>
+            </p>
+            <p><strong>Email:</strong> <a style="font-size: 1rem; text-transform: lowercase;" target="_blank"
+                href="mailto:contact@codingcreators.in" rel="noopener noreferrer">
+                <span>contact@codingcreators.in</span>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/about/">About us</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/service/">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/courses/">Courses Offered</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="/contact/">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i><a class="dropdown-item" href="javascript:void(0);"
+                onclick="showImage('classtraining')"><span>Classroom Training</span> </a>
+            </li>
+            <li><i class="bi bi-chevron-right"></i><a class="dropdown-item" href="javascript:void(0);"
+                onclick="showImage('onlinetraining')">Online
+                Training</a></li>
+            <li><i class="bi bi-chevron-right"></i><a class="dropdown-item" href="javascript:void(0);"
+                onclick="showImage('itcorporatetraining')">Corporate Training</a></li>
+            <li><i class="bi bi-chevron-right"></i><a class="dropdown-item" href="javascript:void(0);"
+                onclick="showImage('realtimeproject')">Real-time Projects</a></li>
+            <li><i class="bi bi-chevron-right"></i><a class="dropdown-item" href="javascript:void(0);"
+                onclick="showImage('itsupport')">IT Work support</a></li>
+          </ul>
+        </div>
+
+
+        <div class="col-lg-4 col-md-12">
+          <h4>Follow Us</h4>
+          <p>
+            Stay connected with us for updates! Follow us on social media for the latest news.</p>
+          <div class="social-links d-flex">
+            <a href="https://x.com/Coding_creators" target="_blank">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61573908004577" target="_blank"><i
+                class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/codingcreators.js/" target="_blank"><i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/codingcreators" target="_blank"><i class="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">CodingCreators</strong> <span>All Rights
+          Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="https://www.technoml.in/">TechnoML</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // Check if there's a hash in the URL when the page loads
+      if (window.location.hash) {
+        const contentId = window.location.hash.substring(1); // Remove #
+        showImage(contentId);
+      }
+    });
+
+    function showImage(contentId) {
+      event.preventDefault(); // Prevent default scrolling behavior
+
+      // Hide all content sections
+      const allContent = document.querySelectorAll('.image-display > div');
+      allContent.forEach(content => content.style.display = 'none');
+
+      // Show the targeted section
+      const selectedContent = document.getElementById(contentId);
+      if (selectedContent) {
+        selectedContent.style.display = 'block';
+
+        // Update the URL hash without affecting scrolling
+        history.replaceState(null, null, `#${contentId}`);
+      }
+
+      // Remove "active" class from all buttons
+      const buttons = document.querySelectorAll('.services-list button');
+      buttons.forEach(button => button.classList.remove('active'));
+
+      // Add "active" class to the correct button
+      const activeButton = document.querySelector(`.services-list button[data-target="${contentId}"]`);
+      if (activeButton) {
+        activeButton.classList.add('active');
+      }
+
+      // Close dropdown if applicable
+      const dropdown = document.querySelector('.dropdown-menu.show');
+      if (dropdown) {
+        dropdown.classList.remove('show');
+      }
+
+      const dropdownToggle = document.querySelector(`.dropdown-toggle[aria-expanded="true"]`);
+      if (dropdownToggle) {
+        dropdownToggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+
+
+
+  </script>
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start"
+            });
+          }
+        });
+      });
+    });
+
+  </script>
+</body>
+
+</html>

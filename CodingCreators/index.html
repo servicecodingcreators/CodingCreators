@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>CodingCreators - IT Training, Work Support & Tech Solutions</title>
+
+  <meta name="description"
+    content="CodingCreators offers expert IT training, work support, and a variety of courses in technology and non-IT fields. Elevate your career with top-notch education and industry-driven solutions.">
+  <meta name="keywords"
+    content="CodingCreators, IT Courses, Work Support, Technology Training, Non-IT Training, Software Development, Digital Solutions, Online Learning">
+  <meta name="author" content="CodingCreators">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <meta property="og:title" content="CodingCreators - IT Training & Digital Solutions">
+  <meta property="og:description"
+    content="Learn IT and non-IT courses with CodingCreators. Get expert-led training, industry-based projects, and work support to excel in technology.">
+  <meta property="og:url" content="https://www.codingcreators.in/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.codingcreators.in/assets/img/logo.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CodingCreators - IT Training & Work Support">
+  <meta name="twitter:description"
+    content="Upgrade your skills with CodingCreators. We provide IT courses, job-ready training, and work support for professionals and beginners.">
+  <meta name="twitter:image" content="https://www.codingcreators.in/assets/img/logo.png">
+
+  <link rel="canonical" href="https://www.codingcreators.in/">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "CodingCreators",
+    "url": "https://www.codingcreators.in/",
+    "logo": "https://www.codingcreators.in/assets/img/logo.png",
+    "founder": "Pavan Kalyan Kopparapu",
+    "foundingDate": "2025",
+    "foundingLocation": "India",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Miyapur",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana ",
+      "postalCode": "500049",
+      "addressCountry": "India"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+918897814073",
+      "contactType": "customer service",
+      "email": "contact@codingcreators.in"
+    },
+    "description": "Codingcreators is a leading provider of IT services, web development, SEO, branding, and mobile app solutions. We also offer professional courses and education programs to empower the next generation of tech innovators.",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=61573908004577",
+      "https://x.com/Coding_creators",
+      "https://www.linkedin.com/in/codingcreators",
+      "https://www.instagram.com/codingcreators.js/"
+    ]
+  }
+  </script>
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.ico" rel="icon">
+  <link href="/assets/img/apple-touch`-icon.png" rel="apple-touch-icon">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="/assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Auto Popup Modal Styles */
+    .auto-popup-modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 9999;
+      /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgb(0, 0, 0);
+      /* Fallback color */
+      background-color: rgba(0, 0, 0, 0.6);
+      /* Black w/ opacity */
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .auto-popup-modal.show {
+      display: block;
+      opacity: 1;
+    }
+
+    .auto-popup-content {
+      background-color: #fefefe;
+      margin: 5% auto;
+      /* 5% from the top and centered */
+      padding: 0;
+      border: 1px solid #888;
+      width: 90%;
+      /* Could be more or less, depending on screen size */
+      max-width: 800px;
+      border-radius: 8px;
+      position: relative;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      animation-name: animatetop;
+      animation-duration: 0.4s
+    }
+
+    @keyframes animatetop {
+      from {
+        top: -300px;
+        opacity: 0
+      }
+
+      to {
+        top: 0;
+        opacity: 1
+      }
+    }
+
+    .auto-popup-close {
+      color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .auto-popup-close:hover,
+    .auto-popup-close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .auto-popup-modal .contact-form {
+      padding: 30px;
+    }
+
+    .auto-popup-modal h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #37517e;
+    }
+  </style>
+
+</head>
+
+<body class="index-page">
+
+  <!-- Auto Popup Contact Modal -->
+  <div id="autoContactModal" class="auto-popup-modal">
+    <div class="auto-popup-content">
+      <span class="auto-popup-close">&times;</span>
+      <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+        <h2>Get in Touch with CodingCreators</h2>
+        <form action="#" method="post" id="popup-contact-form" class="php-email-form"
+          onsubmit="return validatePopupForm()">
+          <div class="row gy-4">
+
+            <div class="col-md-6">
+              <label for="popup-firstname-field" class="pb-2">First Name</label>
+              <input type="text" name="firstname" id="popup-firstname-field" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="popup-lastname-field" class="pb-2">Last Name</label>
+              <input type="text" name="lastname" id="popup-lastname-field" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="popup-mobilenumber-field" class="pb-2">Mobile Number</label>
+              <input type="number" name="mobilenumber" id="popup-mobilenumber-field" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+              <label for="popup-email-field" class="pb-2">Your Email</label>
+              <input type="email" class="form-control" name="email" id="popup-email-field" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="popup-domain" class="pb-2">Preferred Domain</label>
+              <select name="domain" id="popup-domain" class="form-control" required>
+                <option value="">----Select----</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Mobile App Development">Mobile App Development</option>
+                <option value="Game Development">Game Development</option>
+                <option value="Angular JS">Angular JS</option>
+                <option value="JAVA Realtime">JAVA Realtime</option>
+                <option value="React JS">React JS</option>
+                <option value="Spring Boot">Spring Boot</option>
+                <option value="DevOps">DevOps</option>
+                <option value="DevOps">Docker Kubernetes</option>
+                <option value="Python Full Stack">Python Full Stack</option>
+                <option value="Java Full Stack">Java Full Stack</option>
+                <option value="Core Python">Core Python</option>
+                <option value="Core Java">Core Java</option>
+                <option value="Advance Python">Advance Python</option>
+                <option value="Advance Java">Advance Java</option>
+                <option value="MERN Full Stack">MERN Full Stack</option>
+                <option value="Data Structures & Algorithms">Data Structures & Algorithms</option>
+                <option value="Manual Testing">Manual Testing</option>
+                <option value="Automation Testing">Automation Testing</option>
+                <option value="Performance Testing">Performance Testing</option>
+                <option value="API Testing">API Testing</option>
+                <option value="Data Science with Python or R">Data Science with Python or R</option>
+                <option value="Machine Learning & AI">Machine Learning & AI</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="Generative AI">Generative AI</option>
+                <option value="Amazon Web Services">Amazon Web Services</option>
+                <option value="Microsoft Azure">Microsoft Azure</option>
+                <option value="SQL">SQL</option>
+                <option value="NoSQL">NoSQL</option>
+                <option value="Agile & Scrum Framework">Agile & Scrum Framework</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="popup-service" class="pb-2">Services</label>
+              <select name="service" id="popup-service" class="form-control" required
+                onchange="togglePopupProjectDropdown()">
+                <option value="">----Select----</option>
+                <option value="Classroom Training">Classroom Training</option>
+                <option value="Online Training">Online Training</option>
+                <option value="IT Corporate Training">IT Corporate Training</option>
+                <option value="IT and Non-IT Real-time Projects">IT and Non-IT Real-time Projects</option>
+                <option value="IT and NON-IT Work support">IT and NON-IT Work support</option>
+              </select>
+            </div>
+            <div class="col-md-6" id="popup-classroom-selection" style="display: none;">
+              <label for="popup-classroom" class="pb-2">Select Classroom Training</label>
+              <select name="classroom" id="popup-classroom" class="form-control">
+                <option value="">----Select Training----</option>
+                <option value="Weekday Classes">Weekday Classes</option>
+                <option value="Weekend Classes">Weekend Classes</option>
+              </select>
+            </div>
+            <div class="col-md-6" id="popup-project-selection" style="display: none;">
+              <label for="popup-project" class="pb-2">Select a Project</label>
+              <select name="project" id="popup-project" class="form-control">
+                <option value="">----Select Project----</option>
+                <option value="IoT Projects">IoT Projects</option>
+                <option value="Software Projects">Software Projects</option>
+                <option value="Embedded Projects">Embedded Projects</option>
+                <option value="Android Projects">Android Projects</option>
+                <option value="Python Projects">Python Projects</option>
+                <option value="Matlab Projects">Matlab Projects</option>
+                <option value="Mini Projects">Mini Projects</option>
+              </select>
+            </div>
+
+            <script>
+              function togglePopupProjectDropdown() {
+                let serviceDropdown = document.getElementById("popup-service");
+                let projectDropdown = document.getElementById("popup-project-selection");
+                let classroomDropdown = document.getElementById("popup-classroom-selection");
+                let projectField = document.getElementById("popup-project");
+                let classroomField = document.getElementById("popup-classroom");
+
+                if (serviceDropdown.value === "IT and Non-IT Real-time Projects") {
+                  projectDropdown.style.display = "block";
+                  projectField.setAttribute("required", "true");
+                } else {
+                  projectDropdown.style.display = "none";
+                  projectField.removeAttribute("required");
+                  projectField.value = "";
+                }
+
+                if (serviceDropdown.value === "Classroom Training") {
+                  classroomDropdown.style.display = "block";
+                  classroomField.setAttribute("required", "true");
+                } else {
+                  classroomDropdown.style.display = "none";
+                  classroomField.removeAttribute("required");
+                  classroomField.value = "";
+                }
+              }
+            </script>
+            <div class="col-md-12">
+              <label for="popup-message-field" class="pb-2">Required Services and Brief Overview</label>
+              <textarea class="form-control" name="message" rows="4" id="popup-message-field" required=""
+                style="resize: none; width: 100%;"></textarea>
+            </div>
+            <div class="col-md-12 text-center">
+              <div class="loading popup-loading" style="display: none;">Loading</div>
+              <div class="error-message popup-error-message" style="display: none;"></div>
+              <div class="sent-message popup-sent-message" style="display: none;">Your message has been sent. Thank you!
+              </div>
+
+              <button type="submit" class="btn btn-primary mt-3"
+                style="background-color: #47b2e4; border: 0; padding: 10px 30px; border-radius: 50px; color: #fff;">Send
+                Message</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="/" class="logo d-flex align-items-center me-auto">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="/assets/img/logo.png" alt="codingCreators_Logo">
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="/" class="active">Home</a></li>
+          <li><a href="/about/">About Us</a></li>
+          <li class="dropdown"><a href="/service/"><span>Services</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li class="dropdown"><a href="/service/#classtraining"><span>Classroom Training</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/service/#classtraining">Weekday Classes</a></li>
+                  <li><a href="/service/#classtraining">Weekend Classes</a></li>
+                </ul>
+              </li>
+              <li><a href="/service/#onlinetraining">Online Training</a></li>
+              <li><a href="/service/#itcorporatetraining">IT Corporate Training </a></li>
+              <li><a href="/service/#realtimeproject">IT and Non-IT Real-time Projects</a></li>
+              <li><a href="/service/#itsupport">IT and NON-IT Work support</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="/courses/"><span>Courses Offered</span> <i
+                class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <!-- <li><a href="#">Dropdown 1</a></li> -->
+              <li class="dropdown"><a href="/courses/#programmingdevelopment"><span>Programming & Development
+                  </span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#programmingdevelopment">Web Development</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Mobile App Development</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Game Development</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Angular JS</a></li>
+                  <li><a href="/courses/#programmingdevelopment">JAVA Realtime</a></li>
+                  <li><a href="/courses/#programmingdevelopment">React JS</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Spring Boot</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Python Full Stack</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Java Full Stack</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Core Java</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Advance Java</a></li>
+                  <li><a href="/courses/#programmingdevelopment">MERN Full Stack</a></li>
+                  <li><a href="/courses/#programmingdevelopment">Data Structures & Algorithms</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/courses/#testing"><span>Software Testing & Quality Assurance</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#testing">Manual Testing</a></li>
+                  <li><a href="/courses/#testing">Automation Testing</a></li>
+                  <li><a href="/courses/#testing">Performance Testing</a></li>
+                  <li><a href="/courses/#testing">API Testing</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/courses/#datascience"><span>Data Science & Analytics</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#datascience">Data Science with Python or R
+                    </a></li>
+                  <li><a href="/courses/#datascience">Core Python</a></li>
+                  <li><a href="/courses/#datascience">Advance Python</a></li>
+                  <li><a href="/courses/#datascience">Machine Learning & AI
+                    </a></li>
+                  <li><a href="/courses/#datascience">Data Analytics</a></li>
+                  <li><a href="/courses/#datascience">Generative AI
+                    </a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/courses/#cloudcomputing"><span>Cloud Computing</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#cloudcomputing">Amazon Web Services</a></li>
+                  <li><a href="/courses/#cloudcomputing">Microsoft Azure
+                    </a></li>
+                  <li><a href="/courses/#cloudcomputing">DevOps</a></li>
+                  <li><a href="/courses/#cloudcomputing">Docker Kubernetes
+                    </a></li>
+
+                </ul>
+              </li>
+
+
+
+              <li class="dropdown"><a href="/courses/#dbms"><span>Database Management</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#dbms">SQL</a></li>
+                  <li><a href="/courses/#dbms">NoSQL</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="/courses/#agileproject"><span>Project Management & Agile</span> <i
+                    class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="/courses/#agileproject">Agile & Scrum Framework
+                    </a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="/careers/">Careers</a></li>
+          <li><a href="/contact/">Contact Us</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center" data-aos="zoom-out">
+            <h1>Great Place to learn Software IT courses</h1>
+            <p>CodingCreators's IT solutions provides training on Software IT Courses, IT Work Support for working
+              professionals , Project making for IT and NON IT  Students.
+            </p>
+            <div class="d-flex">
+              <a href="/contact/" class="btn-get-started">Get Started</a>
+
+            </div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
+            <img src="/assets/img/hero-img.png" class="img-fluid animated" alt="">
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8 content" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              Founded in 2025, CodingCreators empowers students with quality tech education, hands-on projects, and
+              real-world applications to succeed in the tech industry.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-circle"></i> <span>Personalized Learning: Tailored programs to suit individual
+                  learning needs.
+                </span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Industry-Relevant Curriculum: Courses aligned with current
+                  tech trends and technologies.
+                </span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Job-Ready Skills: Focus on practical skills for career
+                  readiness.
+
+                </span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Experienced Mentors: Guidance from experienced industry
+                  professionals.
+
+                </span></li>
+              <li><i class="bi bi-check2-circle"></i> <span>Flexible Learning Options: Online and offline courses for
+                  convenience.
+
+
+
+
+
+
+
+                </span></li>
+            </ul>
+          </div>
+          <div class="col-lg-4   order-1 order-lg-2 why-us-img">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Selenium Training in Bangalore Section -->
+    <section id="selenium-training-bangalore" class="section light-background">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Selenium Training in Bangalore</h2>
+        <p>Master automation testing with the industry's best selenium training institute.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
+            
+            <div style="margin-bottom: 20px;">
+              <h3>Intro to IT and Selenium</h3>
+              <p>The IT industry is rapidly growing, and with it, the demand for high-quality software testing training. Automation plays a crucial role in modern software development, reducing manual effort and increasing product reliability. Selenium is the world's most trusted open-source tool for this purpose. Taking a selenium automation course helps you automate web applications efficiently across different browsers and platforms. Whether you are a fresher or a working professional looking for a reputed IT training institute, mastering selenium with java training is a fantastic way to elevate your tech career and open doors to lucrative job opportunities.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h3>Why CodingCreators?</h3>
+              <p>Recognized as a leading software testing institute india, CodingCreators provides highly comprehensive manual and automation testing course modules. We are widely regarded as the best selenium training institute because we prioritize hands-on learning, offering software testing with real time projects that enable you to learn selenium step by step. Whether you prefer online software testing classes from the comfort of your home or engaging offline sessions, our expert-led instruction guarantees success. Trust our proven methodologies to transform your theoretical knowledge into practical expertise.</p>
+            </div>
+
+            <div>
+              <h3>Course Details</h3>
+              <p>Our top-rated qa automation training covers everything from the fundamentals of manual testing training to highly advanced test automation training strategies. We dive deep into java selenium training and cucumber framework training to make you an expert in BDD approaches. Additionally, we provide a globally recognized software testing certification course, focusing thoroughly on selenium framework training and offering exclusive software testing internship training. Your ultimate success is our goal, which is why we provide dedicated software testing placement training and rigorous software testing interview preparation. To ensure you are fully industry-ready, you will develop software testing projects for students and work extensively on real time selenium projects. Start your journey by enrolling in our software testing course online today!</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section><!-- /Selenium Training in Bangalore Section -->
+
+    <!-- Selenium Training in Hyderabad Section -->
+    <section id="selenium-training-hyderabad" class="section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Selenium Training in Hyderabad</h2>
+        <p>Join the best software testing institute in Hyderabad to accelerate your Tech Career.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
+
+            <div style="margin-bottom: 20px;">
+              <h3>Intro to IT and Selenium</h3>
+              <p>Hyderabad is a massive global IT hub, requiring top-tier professionals who can deliver flawless software. The need for specialized testing training in Hyderabad is highly sought after by corporate giants and startups alike. Selenium remains the industry-standard software for UI automation, enabling testers to execute complex scripts effortlessly. By opting for a dedicated automation testing course Hyderabad, you embrace the agile future of quality assurance and ensure you possess the skills top recruiters are actively searching for.</p>
+            </div>
+
+            <div style="margin-bottom: 20px;">
+              <h3>Why CodingCreators?</h3>
+              <p>When it comes to quality education, CodingCreators stands out as the absolutely best software testing institute in Hyderabad. We proudly serve students globally while specifically catering to local tech enthusiasts needing comprehensive selenium training in Miyapur Hyderabad and accessible selenium training near Miyapur. If you are looking for a reliable IT training institute Hyderabad that truly cares about your career, our expert mentors are here to guide you. We specialize deeply in both automation testing training and structured manual testing training Hyderabad.</p>
+            </div>
+
+            <div>
+              <h3>Course Details</h3>
+              <p>At CodingCreators, we deliver intensive, results-oriented software testing coaching Hyderabad that sets you apart from the crowd. The program includes specialized tracking for your career goals, blending rich theoretical knowledge with hands-on practical workflows. You will master everything from foundational test case design to complex continuous integration pipelines. Enhance your professional trajectory with our premier curriculum, meticulously focused on making you industry-ready from day one. Let us guide you towards the most rewarding manual and automation roles in the IT ecosystem.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section><!-- /Selenium Training in Hyderabad Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Adding a testimonial section to enhance trust and showcase client satisfaction on the website.
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Riya Sharma</h3>
+                <h4>B.Tech Student, Delhi University</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>CodingCreators helped me land my first internship with their practical training and real-world
+                    projects. Highly recommended for students!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Arjun Mehta</h3>
+                <h4>Founder, EduSpark Solutions</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The team at CodingCreators built our entire platform with great attention to detail and timely
+                    delivery. Exceptional service!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Sneha Iyer</h3>
+                <h4>MCA Graduate, Mumbai</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Their mentorship and coding challenges boosted my confidence and got me placed in an MNC. Thank
+                    you, CodingCreators!</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Rohit Verma</h3>
+                <h4>Small Business Owner, Jaipur</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>I hired CodingCreators for my e-commerce website and was amazed by the design, speed, and user
+                    experience they delivered.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>Ananya Singh</h3>
+                <h4>Data Science Intern, Bangalore</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>From resume reviews to mock interviews, their complete career support made a huge difference in
+                    my job search.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+
+
+    <!-- Faq 2 Section -->
+    <section id="faq-2" class="faq-2 section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Frequently Asked Questions</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-10">
+
+            <div class="faq-container">
+
+              <div class="faq-item faq-active" data-aos="fade-up" data-aos-delay="200">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Is this training suitable for beginners?
+                </h3>
+                <div class="faq-content">
+                  <p>Yes, our training is tailored for all levels, from beginners to experienced professionals.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What topics are covered in the training?</h3>
+                <div class="faq-content">
+                  <p>We cover manual testing, Java Selenium automation, Cucumber, frameworks, and real-time project
+                    implementations.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>How practical is the training?
+                </h3>
+                <div class="faq-content">
+                  <p>Our training includes hands-on practice, real-time scenarios, and detailed exercises to ensure
+                    comprehensive learning.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>Will I receive placement assistance?
+                </h3>
+                <div class="faq-content">
+                  <p>Yes, placement-oriented training and guidance are part of our curriculum.
+                  </p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>What makes CodingCreators different?
+                </h3>
+                <div class="faq-content">
+                  <p>We focus on both technical skills and practical knowledge, bridging the gap between academic
+                    learning and industry requirements.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Faq 2 Section -->
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-9 text-center text-xl-start">
+            <h3>Call To Action</h3>
+            <p>Have questions or need assistance? Click here to
+              get in touch with our team and we'll be happy to help you with any inquiries or support you may need!
+            </p>
+          </div>
+          <div class="col-xl-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="/contact/">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Get in touch with us for inquiries, collaborations, or support – we’re here to help!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Plot No: 154&155, HNo. 1-72NE,</p>
+                  <p> Lane Number N-4, Nagarjuna Enclave,</p>
+                  <p> Miyapur, Hyderabad, Telangana 500049, India</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Call Us</h3>
+                  <p><a href="https://wa.me/918897814073" target="_blank">+91 8897814073</a></p>
+                  <p><a href="https://wa.me/918919210748" target="_blank">+91 8919210748</a></p>
+                  <p><a href="https://wa.me/917842510602" target="_blank">+91 7842510602</a></p>
+                </div>
+
+              </div><!-- End Info Item -->
+
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Us</h3>
+                  <a target="_blank" href="mailto:contact@codingcreators.in" rel="noopener noreferrer">
+                    <p>contact@codingcreators.in</p>
+                  </a>
+                </div>
+              </div><!-- End Info Item -->
+
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3804.8922796782467!2d78.35986786673892!3d17.512654856885987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDMwJzQzLjYiTiA3OMKwMjEnMjcuMyJF!5e0!3m2!1sen!2sin!4v1737783704211!5m2!1sen!2sin"
+                frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <form action="#" method="post" id="contact-form" class="php-email-form" data-aos="fade-up"
+                data-aos-delay="200" onsubmit="return validateForm()">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <label for="firstname-field" class="pb-2">First Name</label>
+                    <input type="text" name="firstname" id="firstname-field" class="form-control" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="lastname-field" class="pb-2">Last Name</label>
+                    <input type="text" name="lastname" id="lastname-field" class="form-control" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="mobilenumber-field" class="pb-2">Mobile Number</label>
+                    <input type="number" name="mobilenumber" id="mobilenumber-field" class="form-control" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email-field" class="pb-2">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email-field" required>
+                  </div>
+
+                  <div class="col-md-6">
+                    <label for="domain" class="pb-2">Preferred Domain</label>
+                    <select name="domain" id="domain" class="form-control" required>
+                      <option value="">----Select----</option>
+                      <option value="Web Development">Web Development</option>
+                      <option value="Mobile App Development">Mobile App Development</option>
+                      <option value="Game Development">Game Development</option>
+                      <option value="Angular JS">Angular JS</option>
+                      <option value="JAVA Realtime">JAVA Realtime</option>
+                      <option value="React JS">React JS</option>
+                      <option value="Spring Boot">Spring Boot</option>
+                      <option value="DevOps">DevOps</option>
+                      <option value="DevOps">Docker Kubernetes</option>
+                      <option value="Python Full Stack">Python Full Stack</option>
+                      <option value="Java Full Stack">Java Full Stack</option>
+                      <option value="Core Python">Core Python</option>
+                      <option value="Core Java">Core Java</option>
+                      <option value="Advance Python">Advance Python</option>
+                      <option value="Advance Java">Advance Java</option>
+                      <option value="MERN Full Stack">MERN Full Stack</option>
+                      <option value="Data Structures & Algorithms">Data Structures & Algorithms</option>
+                      <option value="Manual Testing">Manual Testing</option>
+                      <option value="Automation Testing">Automation Testing</option>
+                      <option value="Performance Testing">Performance Testing</option>
+                      <option value="API Testing">API Testing</option>
+                      <option value="Data Science with Python or R">Data Science with Python or R</option>
+                      <option value="Machine Learning & AI">Machine Learning & AI</option>
+                      <option value="Data Analytics">Data Analytics</option>
+                      <option value="Generative AI">Generative AI</option>
+                      <option value="Amazon Web Services">Amazon Web Services</option>
+                      <option value="Microsoft Azure">Microsoft Azure</option>
+                      <option value="SQL">SQL</option>
+                      <option value="NoSQL">NoSQL</option>
+                      <option value="Agile & Scrum Framework">Agile & Scrum Framework</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="service" class="pb-2">Services</label>
+                    <select name="service" id="service" class="form-control" required
+                      onchange="toggleProjectDropdown()">
+                      <option value="">----Select----</option>
+                      <option value="Classroom Training">Classroom Training</option>
+                      <option value="Online Training">Online Training</option>
+                      <option value="IT Corporate Training">IT Corporate Training</option>
+                      <option value="IT and Non-IT Real-time Projects">IT and Non-IT Real-time Projects</option>
+                      <option value="IT and NON-IT Work support">IT and NON-IT Work support</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6" id="classroom-selection" style="display: none;">
+                    <label for="classroom" class="pb-2">Select Classroom Training</label>
+                    <select name="classroom" id="classroom" class="form-control">
+                      <option value="">----Select Training----</option>
+                      <option value="Weekday Classes">Weekday Classes</option>
+                      <option value="Weekend Classes">Weekend Classes</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6" id="project-selection" style="display: none;">
+                    <label for="project" class="pb-2">Select a Project</label>
+                    <select name="project" id="project" class="form-control">
+                      <option value="">----Select Project----</option>
+                      <option value="IoT Projects">IoT Projects</option>
+                      <option value="Software Projects">Software Projects</option>
+                      <option value="Embedded Projects">Embedded Projects</option>
+                      <option value="Android Projects">Android Projects</option>
+                      <option value="Python Projects">Python Projects</option>
+                      <option value="Matlab Projects">Matlab Projects</option>
+                      <option value="Mini Projects">Mini Projects</option>
+                    </select>
+                  </div>
+
+                  <script>
+                    function toggleProjectDropdown() {
+                      let serviceDropdown = document.getElementById("service");
+                      let projectDropdown = document.getElementById("project-selection");
+                      let classroomDropdown = document.getElementById("classroom-selection");
+                      let projectField = document.getElementById("project"); // Get project select field
+                      let classroomField = document.getElementById("classroom"); // Get project select field
+
+                      if (serviceDropdown.value === "IT and Non-IT Real-time Projects") {
+                        projectDropdown.style.display = "block"; // Show project selection
+                        projectField.setAttribute("required", "true"); // Make required
+
+                      } else {
+                        projectDropdown.style.display = "none"; // Hide project selection
+                        projectField.removeAttribute("required"); // Remove required
+                        projectField.value = ""; // Clear selected project
+                      }
+
+                      if (serviceDropdown.value === "Classroom Training") {
+                        classroomDropdown.style.display = "block"; // Show project selection
+                        classroomField.setAttribute("required", "true"); // Make required
+                      } else {
+                        classroomDropdown.style.display = "none"; // Hide project selection
+                        classroomField.removeAttribute("required"); // Remove required
+                        classroomField.value = ""; // Clear selected project
+                      }
+                    }
+                  </script>
+                  <div class="col-md-12">
+                    <label for="message-field" class="pb-2">Required Services and Brief Overview</label>
+                    <textarea class="form-control" name="message" rows="10" id="message-field" required=""
+                      style="resize: none; height: 300px; width: 100%;"></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+
+  <div id="footer"></div>
+
+  <script>
+    // Load navbar.html into the div with id="navbar"
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      });
+  </script>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script type="module" src="/assets/js/firebase.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const modal = document.getElementById("autoContactModal");
+      const span = document.getElementsByClassName("auto-popup-close")[0];
+      let modalShown = false;
+
+      // When the user scrolls, check if they've scrolled halfway down the page
+      window.addEventListener("scroll", function () {
+        if (!modalShown) {
+          const scrollPosition = window.scrollY;
+          const windowHeight = window.innerHeight;
+          const fullHeight = document.documentElement.scrollHeight;
+
+          if (scrollPosition + windowHeight >= fullHeight / 2) {
+            modal.classList.add("show");
+            modalShown = true;
+          }
+        }
+      });
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.classList.remove("show");
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.classList.remove("show");
+        }
+      }
+    });
+
+    // Popup form validation
+    window.validatePopupForm = function () {
+      let firstName = document.getElementById("popup-firstname-field").value.trim();
+      let lastName = document.getElementById("popup-lastname-field").value.trim();
+      let mobileNumber = document.getElementById("popup-mobilenumber-field").value.trim();
+      let email = document.getElementById("popup-email-field").value.trim();
+      let domain = document.getElementById("popup-domain").value;
+      let service = document.getElementById("popup-service").value;
+      let message = document.getElementById("popup-message-field").value.trim();
+
+      let nameRegex = /^[A-Za-z]{3,30}$/;
+      let mobileRegex = /^[0-9]{10}$/;
+      let emailRegex = /^[A-Za-z0-9]+@[A-Za-z]+\.[A-Za-z]{2,}$/;
+
+      if (!nameRegex.test(firstName)) {
+        alert("First name must be between 3 to 30 alphabetic characters only.");
+        return false;
+      }
+      if (!nameRegex.test(lastName)) {
+        alert("Last name must be between 3 to 30 alphabetic characters only.");
+        return false;
+      }
+      if (!mobileRegex.test(mobileNumber)) {
+        alert("Mobile number must be exactly 10 digits.");
+        return false;
+      }
+      if (!emailRegex.test(email)) {
+        alert("Email should not contain special characters like ., %, -, _ before '@'.");
+        return false;
+      }
+      if (domain === "") {
+        alert("Please select a preferred domain.");
+        return false;
+      }
+      if (service === "") {
+        alert("Please select a service.");
+        return false;
+      }
+      if (message.length < 30 || message.length > 500) {
+        alert("Required Services and Brief Overview must be between 30 to 500 characters.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+
+</body>
+
+</html>
